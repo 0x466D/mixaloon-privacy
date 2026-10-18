@@ -21,3 +21,7 @@ a { color: var(--accent); }
 ul { padding-left: 22px; }
 .lead { font-size: 19px; }
 footer { margin-top: 24px; font-size: 14px; color: var(--ink-2); }
+h3 { font-size: 17px; margin: 18px 0 2px; }
+.item p { margin-top: 2px; }
+.item b { color: var(--ink-2); font-weight: 600; }
+ol { padding-left: 22px; }

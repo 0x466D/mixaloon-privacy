@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mixaloon privacy policy</title>
-  <meta name="description" content="Privacy policy for the game Mixaloon: the game does not collect, send or share any personal data.">
+  <meta name="description" content="Privacy policy for the game Mixaloon: cloud save, optional Save with Google, gameplay statistics and crash reports, and how to delete your data.">
   <link rel="icon" href="../icon.png">
   <link rel="stylesheet" href="../style.css">
 </head>
@@ -13,49 +13,132 @@
   <header><img src="../icon.png" alt=""><a href="../">Mixaloon</a></header>
   <article class="card">
     <h1>Privacy policy</h1>
-    <p class="muted">Last updated: 13 October 2026</p>
+    <p class="muted">Last updated: 18 October 2026</p>
 
-    <p class="lead">This policy explains how the game Mixaloon (“the game”, “we”) handles information. The short answer: <strong>the game does not collect, send or share any personal data.</strong></p>
+    <p class="lead">This policy explains what information the game Mixaloon (“the game”, “we”) uses, why, and the choices you have. We have written it to be short and plain.</p>
 
     <h2>Who is responsible</h2>
-    <p>The game is made by Fredrik Mattiasson, Östersund, Sweden. Contact for anything about privacy: <a href="mailto:mixaloon.support@fremtech.se">mixaloon.support@fremtech.se</a>.</p>
+    <p>The game is made by Fredrik Mattiasson, Östersund, Sweden. We are the “controller” of your data under the EU General Data Protection Regulation (GDPR). Contact for anything about privacy: <a href="mailto:mixaloon.support@fremtech.se">mixaloon.support@fremtech.se</a>.</p>
 
-    <h2>What the game stores, and where</h2>
-    <p>The game saves your progress and settings <strong>only on your phone</strong>, in the game’s own private storage: which levels you have won, your stars, lives, coins and boosters, and your settings (such as color symbols, sound, music and vibration). This never leaves your phone through the game. It is deleted when you uninstall the game or clear its data.</p>
-    <p>Your phone’s own backup (Android backup to your Google account) may include this game data, if backup is turned on on your phone. That backup is managed by Google under your own account; we have no access to it.</p>
-
-    <h2>What the game does not do</h2>
+    <h2>The short version</h2>
     <ul>
-      <li>It does not connect to the internet. It works fully offline.</li>
-      <li>It has no ads, no analytics, no crash reporting service and no in-app purchases. In this test version the shop items and the offers are free.</li>
-      <li>It has no accounts and never asks for your name, email address, phone number, contacts, photos or location.</li>
-      <li>It does not use your advertising ID.</li>
+      <li>Your progress is saved on your phone, and a copy is kept in the cloud so you can get it back on a new phone. For that the game gives you an <strong>anonymous account</strong>: an ID made up by Google Firebase, with no name or email.</li>
+      <li>You can choose <strong>Save with Google</strong> in Settings, so your progress follows your Google account. Only then does the account include your Google email address.</li>
+      <li>The game asks <strong>what year you were born</strong> once, on the first start. The answer stays on your phone and is never sent to us or to Google. It only decides what the game may do (see “Children”).</li>
+      <li>Where the law requires it (the EU/EEA, the UK and Switzerland), Google’s consent form asks whether <strong>gameplay statistics</strong> may be collected. Under 13, they are never collected.</li>
+      <li>The game sends <strong>gameplay statistics</strong> (which levels are played, won and lost) and <strong>crash reports</strong>, to make the game better and fix bugs.</li>
+      <li>If you enter a <strong>code</strong> or collect a <strong>gift</strong>, the game records that your account used it.</li>
+      <li>You can delete your cloud save and account at any time: <strong>Settings → Delete my data</strong>, or by email (see “Deleting your data”).</li>
+      <li>This version of the game has <strong>no ads and no purchases</strong>. We don’t sell your data.</li>
     </ul>
+
+    <h2>What we use, and why</h2>
+
+    <div class="item">
+      <h3>Game progress and settings on the phone</h3>
+      <p><b>What:</b> levels won, stars, coins, boosters, lives, places, and your settings (sound, color symbols, vibration and similar). <b>Why:</b> so the game remembers where you are. <b>Legal basis:</b> necessary to provide the game (contract). <b>Where:</b> stored on your phone. Your phone’s own Android backup may include it, if you have backup turned on; that backup is managed by Google under your own account.</p>
+    </div>
+    <div class="item">
+      <h3>Cloud save</h3>
+      <p><b>What:</b> the same game progress (not your settings), and when it was last saved. <b>Why:</b> so your progress is safe and comes back on a new phone. <b>Legal basis:</b> necessary to provide the game (contract). <b>Who:</b> Google (Firebase Firestore), stored in Europe.</p>
+    </div>
+    <div class="item">
+      <h3>Codes and gifts</h3>
+      <p><b>What:</b> when you enter a code, a record of your account ID and the time, one per code you used, and the code’s use count goes up. A gift you collect has no record of its own on the server: it is noted in your cloud save (the list of codes and gifts you have used, with what they gave) and, if statistics are allowed, as a statistics event. <b>Why:</b> so a code works once per account and a gift is not given twice. <b>Legal basis:</b> necessary to provide the game (contract). <b>Who:</b> Google (Firebase Firestore, stored in Europe; events: Firebase Analytics).</p>
+    </div>
+    <div class="item">
+      <h3>Account</h3>
+      <p><b>What:</b> an anonymous account ID; with Save with Google, also your Google account’s email address and name. <b>Why:</b> to know which cloud save is yours. <b>Legal basis:</b> necessary to provide the game (contract). <b>Who:</b> Google (Firebase Authentication).</p>
+    </div>
+    <div class="item">
+      <h3>Birth year</h3>
+      <p><b>What:</b> the year you pick on the first start. <b>Why:</b> to switch off statistics and Google sign-in under 13. <b>Legal basis:</b> legitimate interest (protecting children). <b>Who:</b> nobody else: it stays on your phone and is never sent.</p>
+    </div>
+    <div class="item">
+      <h3>Gameplay statistics</h3>
+      <p><b>What:</b> which tutorial steps, levels and daily challenges you play, win or lose, with moves left, stars, boosters and extra moves used; how a Pip’s Run ended (town, score, distance, deliveries); coins earned and spent by source (summed per screen); which code you redeemed or gift you collected; where the game offers a free gift in place of an ad; plus Firebase’s standard events (first open, session start, app version), an app-instance ID, country, device model and OS version. No names, no free text. <b>Why:</b> to see which levels are too hard or too easy and improve the game. <b>Legal basis:</b> your consent (EU/EEA, UK, Switzerland); legitimate interest elsewhere. Never under 13. <b>Who:</b> Google (Firebase Analytics).</p>
+    </div>
+    <div class="item">
+      <h3>Crash reports</h3>
+      <p><b>What:</b> the error message, where in the game’s code it happened and the stack trace of errors the game catches; if the app itself crashes, the crash trace; plus Firebase’s standard crash data (device model, OS version, an installation ID). No user ID, no name, no email. <b>Why:</b> to find and fix bugs. <b>Legal basis:</b> legitimate interest (a game that works); they contain no personal data. Sent at every age. <b>Who:</b> Google (Firebase Crashlytics).</p>
+    </div>
+    <div class="item">
+      <h3>Game settings from our server</h3>
+      <p><b>What:</b> a Firebase installation ID (a random ID for this install of the game, not tied to you or your phone), your phone’s language setting and the Firebase library’s version, sent when the game downloads its current settings (prices in coins, coin sales, new levels, the update notice). Your app version is not sent: the game compares it on the phone. <b>Why:</b> to tune the game without an app update. <b>Legal basis:</b> necessary to provide the game (contract), and legitimate interest (running and tuning the game). Sent at every age, before any consent choice, as it carries no gameplay data. <b>Who:</b> Google (Firebase Remote Config, Firestore).</p>
+    </div>
+    <div class="item">
+      <h3>Consent choice</h3>
+      <p><b>What:</b> your answer in Google’s consent form, stored by Google’s consent tool on your phone. <b>Why:</b> to respect your choice. <b>Who:</b> Google (User Messaging Platform); stored on your phone.</p>
+    </div>
+    <div class="item">
+      <h3>Support emails</h3>
+      <p><b>What:</b> your email address and what you write. <b>Why:</b> to answer you. <b>Legal basis:</b> legitimate interest. <b>Who:</b> Cloudflare (email forwarding) and Google (Gmail).</p>
+    </div>
+
+    <h2>Advertising ID</h2>
+    <p>The app includes Google’s ad library, which it uses only to show Google’s consent form. The app declares the <strong>advertising ID</strong> permission because that library does, but <strong>this version shows no ads: it never requests an ad and does not read your advertising ID.</strong> Our statistics never collect it. If a future version switches ads on, we will update this policy before that version is released.</p>
+
+    <h2>Your privacy choices</h2>
+    <ul>
+      <li><strong>Birth year:</strong> asked once, on the first start, with no year pre-selected. It cannot be changed later in the same install (uninstalling and starting again asks again).</li>
+      <li><strong>Consent form:</strong> in the EU/EEA, the UK and Switzerland, Google’s consent form (Google User Messaging Platform) appears right after the birth year. Until you agree, no statistics are collected there. Elsewhere there is no form and statistics are on by default once Google’s consent check has answered (until it has, for example with no internet, they stay off), except under 13.</li>
+      <li><strong>Change your mind:</strong> where the form is required, Settings has a <strong>Privacy options</strong> row that opens it again. Statistics follow your new choice from then on.</li>
+      <li><strong>Crash reports</strong> are not part of the consent form: they contain no personal data and are sent so the game keeps working.</li>
+    </ul>
+
+    <h2>Save with Google</h2>
+    <p>Save with Google is optional. If you choose it, Google tells Firebase which Google account you signed in with (its email address and name). We use this only to find your cloud save, for example on a new phone. If that Google account already has a Mixaloon save, the two saves are combined so you keep the further-along progress, and the game restarts with it. The phone’s earlier anonymous save then stays in the cloud: it holds only game progress, nobody can reach it any more, and we may delete such saves in clean-ups (see “How long data is kept”).</p>
 
     <h2>Sharing your painting</h2>
     <p>After a win you can share a picture of your painting, if your phone supports it. The picture goes only where you choose in your phone’s share menu; we don’t receive it. The same goes for the daily puzzle result you can share as text.</p>
 
     <h2>Permissions</h2>
     <ul>
+      <li><strong>Internet</strong>, for the cloud save, Save with Google, codes and gifts, game settings, statistics and crash reports.</li>
       <li><strong>Vibration</strong>, so pops can be felt (you can turn vibration off in Settings).</li>
       <li><strong>Notifications</strong>, only if you turn on the daily puzzle reminder. The reminder is scheduled on your phone; nothing is sent to us. Android also lists <em>run at startup</em> and <em>prevent phone from sleeping</em>, so a scheduled reminder survives a restart and arrives on time.</li>
-      <li><strong>Internet</strong> is listed because it is part of the app framework the game is built with. The game does not use it.</li>
+      <li><strong>Advertising ID</strong>: declared by Google’s ad library, not used in this version (see above).</li>
     </ul>
 
-    <h2>Error log</h2>
-    <p>The game may keep a small log of technical errors on your phone, to help fix bugs. It stays on your phone. It is only sent to us if you choose to copy it and send it yourself, for example in an email.</p>
-
-    <h2>If you email us</h2>
-    <p>If you write to us, we receive your email address and what you write, and use it only to answer you. We delete support emails 12 months after the conversation ends. Our email is handled by Cloudflare (email forwarding) and Google (Gmail), where the messages are stored.</p>
-
     <h2>Children</h2>
-    <p>The game does not collect personal data from anyone, including children.</p>
+    <p>The game is made for a general audience and isn’t directed at children under 13. On the first start we ask what year you were born. We keep only that year, only on your phone, and use it as follows:</p>
+    <ul>
+      <li><strong>Under 13:</strong> no gameplay statistics, and <strong>Save with Google</strong> is not offered (cloud save with the anonymous account and <strong>Delete my data</strong> still work). Consent requests are marked as for a child. Crash reports, which contain no personal data, are still sent.</li>
+      <li>If the birth year is not known, the game takes the safe side: no statistics and no Save with Google.</li>
+    </ul>
+    <p>Because the age is a year picked by the player, it is not checked.</p>
+
+    <h2>How long data is kept</h2>
+    <ul>
+      <li><strong>Progress on your phone:</strong> until you delete it in Settings, uninstall the game or clear its data.</li>
+      <li><strong>Cloud save and account:</strong> until you delete them (Settings → Delete my data, or by email).</li>
+      <li><strong>An earlier anonymous save left behind by Save with Google</strong> (see above), and its code redemption records: kept, holding only game progress; we may delete them in clean-ups, and delete them on request.</li>
+      <li><strong>Code redemption records:</strong> deleted with your account.</li>
+      <li><strong>Statistics (event-level data):</strong> 2 months in Firebase; after that only aggregated, anonymous reports remain.</li>
+      <li><strong>Crash reports:</strong> 90 days.</li>
+      <li><strong>Support emails:</strong> 12 months after the conversation ends.</li>
+    </ul>
+
+    <h2>Where data goes</h2>
+    <p>Firebase is run by Google. The cloud save is stored in Europe. Google may process statistics, crash, account and game-settings data outside the EU/EEA, including in the United States; such transfers are protected by the EU–US Data Privacy Framework and the European Commission’s Standard Contractual Clauses. Google’s Firebase privacy page: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</p>
+
+    <h2>Security</h2>
+    <p>Everything the game sends goes over encrypted connections (HTTPS/TLS). Each cloud save can only be read and changed by its own account.</p>
+
+    <h2>Error log</h2>
+    <p>The game may also keep a small log of technical errors on your phone. It stays on your phone unless you choose to copy it and send it to us yourself, for example in an email.</p>
+
+    <h2>Deleting your data</h2>
+    <ul>
+      <li><strong>In the game:</strong> Settings → <strong>Delete my data</strong> deletes your cloud save, your code redemption records under your current ID and your progress on the phone (your settings stay), and removes your sign-in. With Save with Google, the game may ask you to sign in with Google once more to remove it; if you cancel, your save is still deleted and you can email us to remove the sign-in. Without Save with Google, an empty sign-in record (an ID with no game data and nothing about you) can remain. It needs an internet connection; offline, nothing is deleted.</li>
+      <li><strong>Without the game:</strong> follow the steps at <a href="../delete/">mixaloon.fremtech.se/delete</a>, or email <a href="mailto:mixaloon.support@fremtech.se">mixaloon.support@fremtech.se</a>.</li>
+    </ul>
 
     <h2>Your rights</h2>
-    <p>Because the game does not collect personal data, we hold no data about you, except emails you send us. Under the EU General Data Protection Regulation (GDPR) you can ask us to see, correct or delete those emails: write to <a href="mailto:mixaloon.support@fremtech.se">mixaloon.support@fremtech.se</a>. You can also complain to the Swedish Authority for Privacy Protection (Integritetsskyddsmyndigheten, IMY), <a href="https://www.imy.se">www.imy.se</a>.</p>
+    <p>Under GDPR you have the right to access the data about you, to correct it, to delete it, to restrict or object to its use, to move it (data portability), and to withdraw consent at any time without affecting earlier use. Email <a href="mailto:mixaloon.support@fremtech.se">mixaloon.support@fremtech.se</a>; we answer within one month. You can also complain to the Swedish Authority for Privacy Protection (Integritetsskyddsmyndigheten, IMY), <a href="https://www.imy.se">www.imy.se</a>, or to the data protection authority where you live.</p>
 
     <h2>Changes</h2>
-    <p>If a future version of the game adds anything that collects data (for example ads or crash reports), we will update this policy before that version is released, and change the date at the top.</p>
+    <p>If we change this policy, we update the date at the top and, for important changes (such as switching on ads or adding purchases), update it before that version of the game is released.</p>
   </article>
   <footer>Mixaloon · <a href="mailto:mixaloon.support@fremtech.se">mixaloon.support@fremtech.se</a></footer>
 </main>
